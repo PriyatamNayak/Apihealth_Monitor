@@ -6,6 +6,8 @@ import sched
 import sys
 import time
 import pickle
+import concurrent.futures
+
 from pathos.multiprocessing import ProcessingPool
 from multiprocessing import Process, freeze_support
 
@@ -27,8 +29,14 @@ def read_csv(csv_file="url_list.csv"):
 
         def map_pool(line):
             temp = {}
-            url_name, url_val = line[0], line[1].strip()  # Removing space from url
-            temp[url_name] = url_val
+            try:
+                if ''.join(line).strip():  # skipping blank lines
+                    url_name, url_val = line[0], line[1].strip()  # Removing space from url
+                    temp[url_name] = url_val
+            except Exception as e:
+                print("Ignoring Exception")
+                print(f'{e} data: {line}')
+                return []
             return temp
 
         url_list = list(map(map_pool, url_data))
@@ -50,7 +58,9 @@ def url_status_checker(url_list):
         url_status_dict[url_name] = response.status
         return url_status_dict
 
-    return list(map(map_pool_status, url_list))
+    with concurrent.futures.ThreadPoolExecutor(max_workers=16) as executor:
+        result = list(map(map_pool_status, url_list))
+    return result
 
 
 def main():
@@ -81,6 +91,6 @@ def main():
 
 
 if __name__ == '__main__':
-    #freeze_support()
-    #read_csv()
+    # freeze_support()
+    # read_csv()
     main()
