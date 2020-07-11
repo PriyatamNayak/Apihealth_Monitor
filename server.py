@@ -58,6 +58,8 @@ def url_status_checker(url_list):
         url_status_dict[url_name] = response.status
         return url_status_dict
 
+    # Used ThreadPool as it is IO based task GIL will not impact this but have to test with large data for benchmark
+    # We can use multiprocessing pool(here ProcessPoolExecutor) to remove impact of GIL
     with concurrent.futures.ThreadPoolExecutor(max_workers=16) as executor:
         result = list(map(map_pool_status, url_list))
     return result
