@@ -14944,3 +14944,352 @@
 12-Jul-20 01:51:53 AM 954- 13192- INFO - Data [{'google': '503'}, {'credit suisse': 200}, {'google1': 404}, {'credit1 suisse': 200}, {'google2': '700'}, {'credit2 suisse': 200}, {'google3': '700'}, {'credit3 suisse': 200}, {'google4': 200}, {'credit5 suisse': '700'}, {'google6': 200}, {'credit6 suisse': '700'}, {'google8': 200}, {'credit9 suisse': 200}, {'google10': 200}, {'credit11 suisse': 200}, {'google12': 200}, {'credit13 suisse': 200}, {'google14': 200}, {'credit15 suisse': 200}, {'google17': 200}, {'credit18 suisse': 200}, {'google19': 200}, {'credit20 suisse': 200}, {'google21': 200}, {'credit22 suisse': 200}, {'google23': 200}, {'credit24 suisse': 200}, {'google25': 200}, {'credit26 suisse': 200}]
 12-Jul-20 01:51:53 AM 955- 13192- INFO - The summary data: ['Summary of service status around: 12/07/2020 01:45', '--------------------------------------------------', '--------------------------------------------------', 'Total number service(URL) are UP and Running: 24', 'Total Number of service(URL) is Down: 6', "List of name URL was down: ['google:503', 'google1:404', 'google2:700', 'google3:700', 'credit5 suisse:700', 'credit6 suisse:700']", '--------------------------------------------------', '--------------------------------------------------']
 12-Jul-20 01:52:00 AM 834- 16524- INFO - starting up on  port ('localhost', 8484)
+12-Jul-20 01:58:24 AM 906- 9208- INFO - starting up on  port ('localhost', 8484)
+12-Jul-20 03:43:45 AM 24- 9208- DEBUG - Starting new HTTPS connection (1): www.google.com1:443
+12-Jul-20 03:43:45 AM 85- 9208- DEBUG - Incremented Retry for (url='/'): Retry(total=2, connect=None, read=None, redirect=None, status=None)
+12-Jul-20 03:43:45 AM 86- 9208- WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x0000025A5409BE88>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+12-Jul-20 03:43:45 AM 87- 9208- DEBUG - Starting new HTTPS connection (2): www.google.com1:443
+12-Jul-20 03:43:45 AM 87- 9208- DEBUG - Incremented Retry for (url='/'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+12-Jul-20 03:43:45 AM 87- 9208- WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x0000025A540B8A48>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+12-Jul-20 03:43:45 AM 88- 9208- DEBUG - Starting new HTTPS connection (3): www.google.com1:443
+12-Jul-20 03:43:45 AM 88- 9208- DEBUG - Incremented Retry for (url='/'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+12-Jul-20 03:43:45 AM 89- 9208- WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x0000025A540B8B88>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+12-Jul-20 03:43:45 AM 89- 9208- DEBUG - Starting new HTTPS connection (4): www.google.com1:443
+12-Jul-20 03:43:45 AM 90- 9208- DEBUG - Starting new HTTPS connection (1): www.credit-suisse.com:443
+12-Jul-20 03:43:45 AM 677- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:43:45 AM 774- 9208- DEBUG - Starting new HTTPS connection (1): www.google.com:443
+12-Jul-20 03:43:45 AM 811- 9208- DEBUG - https://www.google.com:443 "GET /api HTTP/1.1" 404 1564
+12-Jul-20 03:43:45 AM 856- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:43:45 AM 937- 9208- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 03:43:45 AM 987- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:43:46 AM 61- 9208- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 03:43:46 AM 111- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:43:46 AM 168- 9208- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 03:43:46 AM 218- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:43:46 AM 272- 9208- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 03:43:46 AM 322- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:43:46 AM 372- 9208- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 03:43:46 AM 423- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:43:46 AM 472- 9208- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 03:43:46 AM 520- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:43:46 AM 572- 9208- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 03:43:46 AM 622- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:43:46 AM 701- 9208- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 03:43:46 AM 750- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:43:46 AM 799- 9208- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 03:43:46 AM 846- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:43:46 AM 901- 9208- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 03:43:46 AM 952- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:43:47 AM 6- 9208- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 03:43:47 AM 53- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:43:47 AM 106- 9208- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 03:43:47 AM 183- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:43:47 AM 237- 9208- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 03:43:47 AM 286- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:43:47 AM 301- 9208- INFO - Data [{'google': '503'}, {'credit suisse': 200}, {'google1': 404}, {'credit1 suisse': 200}, {'google2': 200}, {'credit2 suisse': 200}, {'google3': 200}, {'credit3 suisse': 200}, {'google4': 200}, {'credit5 suisse': 200}, {'google6': 200}, {'credit6 suisse': 200}, {'google8': 200}, {'credit9 suisse': 200}, {'google10': 200}, {'credit11 suisse': 200}, {'google12': 200}, {'credit13 suisse': 200}, {'google14': 200}, {'credit15 suisse': 200}, {'google17': 200}, {'credit18 suisse': 200}, {'google19': 200}, {'credit20 suisse': 200}, {'google21': 200}, {'credit22 suisse': 200}, {'google23': 200}, {'credit24 suisse': 200}, {'google25': 200}, {'credit26 suisse': 200}]
+12-Jul-20 03:43:47 AM 301- 9208- INFO - The summary data: ['Summary of service status around: 12/07/2020 01:58', '--------------------------------------------------', '--------------------------------------------------', 'Total number service(URL) are UP and Running: 28', 'Total Number of service(URL) is Down: 2', "List of name URL was down: ['google:503', 'google1:404']", '--------------------------------------------------', '--------------------------------------------------']
+12-Jul-20 03:43:47 AM 303- 9208- INFO - The monitoring data: <function run.<locals>.send_monitor_data at 0x0000025A5408AEE8>
+12-Jul-20 03:53:47 AM 316- 9208- DEBUG - Starting new HTTPS connection (5): www.google.com1:443
+12-Jul-20 03:53:47 AM 325- 9208- DEBUG - Incremented Retry for (url='/'): Retry(total=2, connect=None, read=None, redirect=None, status=None)
+12-Jul-20 03:53:47 AM 326- 9208- WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x0000025A5409BB48>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+12-Jul-20 03:53:47 AM 326- 9208- DEBUG - Starting new HTTPS connection (6): www.google.com1:443
+12-Jul-20 03:53:47 AM 327- 9208- DEBUG - Incremented Retry for (url='/'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+12-Jul-20 03:53:47 AM 327- 9208- WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x0000025A540DE6C8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+12-Jul-20 03:53:47 AM 327- 9208- DEBUG - Starting new HTTPS connection (7): www.google.com1:443
+12-Jul-20 03:53:47 AM 328- 9208- DEBUG - Incremented Retry for (url='/'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+12-Jul-20 03:53:47 AM 328- 9208- WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x0000025A540DEA48>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+12-Jul-20 03:53:47 AM 328- 9208- DEBUG - Starting new HTTPS connection (8): www.google.com1:443
+12-Jul-20 03:53:47 AM 329- 9208- DEBUG - Resetting dropped connection: www.credit-suisse.com
+12-Jul-20 03:53:47 AM 499- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:53:47 AM 600- 9208- DEBUG - Resetting dropped connection: www.google.com
+12-Jul-20 03:53:47 AM 640- 9208- DEBUG - https://www.google.com:443 "GET /api HTTP/1.1" 404 1564
+12-Jul-20 03:53:47 AM 699- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:53:47 AM 785- 9208- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 03:53:47 AM 843- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:53:47 AM 925- 9208- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 03:53:47 AM 978- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:53:48 AM 31- 9208- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 03:53:48 AM 85- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:53:48 AM 145- 9208- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 03:53:48 AM 201- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:53:48 AM 261- 9208- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 03:53:48 AM 316- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:53:48 AM 365- 9208- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 03:53:48 AM 417- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:53:48 AM 471- 9208- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 03:53:48 AM 529- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:53:48 AM 582- 9208- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 03:53:48 AM 634- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:53:48 AM 687- 9208- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 03:53:48 AM 751- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:53:48 AM 803- 9208- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 03:53:48 AM 857- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:53:48 AM 908- 9208- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 03:53:48 AM 961- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:53:49 AM 19- 9208- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 03:53:49 AM 73- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:53:49 AM 128- 9208- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 03:53:49 AM 181- 9208- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 03:53:49 AM 197- 9208- INFO - Data [{'google': '503'}, {'credit suisse': 200}, {'google1': 404}, {'credit1 suisse': 200}, {'google2': 200}, {'credit2 suisse': 200}, {'google3': 200}, {'credit3 suisse': 200}, {'google4': 200}, {'credit5 suisse': 200}, {'google6': 200}, {'credit6 suisse': 200}, {'google8': 200}, {'credit9 suisse': 200}, {'google10': 200}, {'credit11 suisse': 200}, {'google12': 200}, {'credit13 suisse': 200}, {'google14': 200}, {'credit15 suisse': 200}, {'google17': 200}, {'credit18 suisse': 200}, {'google19': 200}, {'credit20 suisse': 200}, {'google21': 200}, {'credit22 suisse': 200}, {'google23': 200}, {'credit24 suisse': 200}, {'google25': 200}, {'credit26 suisse': 200}]
+12-Jul-20 03:53:49 AM 198- 9208- INFO - The summary data: ['Summary of service status around: 12/07/2020 01:58', '--------------------------------------------------', '--------------------------------------------------', 'Total number service(URL) are UP and Running: 28', 'Total Number of service(URL) is Down: 2', "List of name URL was down: ['google:503', 'google1:404']", '--------------------------------------------------', '--------------------------------------------------']
+12-Jul-20 03:55:49 AM 728- 10864- INFO - starting up on  port ('localhost', 8484)
+12-Jul-20 04:07:43 AM 187- 17872- INFO - starting up on  port ('localhost', 8484)
+12-Jul-20 04:40:46 AM 863- 17872- DEBUG - Starting new HTTPS connection (1): www.google.com1:443
+12-Jul-20 04:40:46 AM 893- 17872- DEBUG - Incremented Retry for (url='/'): Retry(total=2, connect=None, read=None, redirect=None, status=None)
+12-Jul-20 04:40:46 AM 893- 17872- WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x000001683397A088>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+12-Jul-20 04:40:46 AM 894- 17872- DEBUG - Starting new HTTPS connection (2): www.google.com1:443
+12-Jul-20 04:40:46 AM 894- 17872- DEBUG - Incremented Retry for (url='/'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+12-Jul-20 04:40:46 AM 895- 17872- WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x0000016833989D88>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+12-Jul-20 04:40:46 AM 895- 17872- DEBUG - Starting new HTTPS connection (3): www.google.com1:443
+12-Jul-20 04:40:46 AM 895- 17872- DEBUG - Incremented Retry for (url='/'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+12-Jul-20 04:40:46 AM 895- 17872- WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x0000016833989C88>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+12-Jul-20 04:40:46 AM 896- 17872- DEBUG - Starting new HTTPS connection (4): www.google.com1:443
+12-Jul-20 04:40:46 AM 896- 17872- DEBUG - Starting new HTTPS connection (1): www.credit-suisse.com:443
+12-Jul-20 04:40:47 AM 131- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:40:47 AM 259- 17872- DEBUG - Starting new HTTPS connection (1): www.google.com:443
+12-Jul-20 04:40:47 AM 297- 17872- DEBUG - https://www.google.com:443 "GET /api HTTP/1.1" 404 1564
+12-Jul-20 04:40:47 AM 349- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:40:47 AM 437- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 04:40:47 AM 497- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:40:47 AM 583- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 04:40:47 AM 643- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:40:47 AM 697- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 04:40:47 AM 802- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:40:47 AM 866- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 04:40:47 AM 924- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:40:47 AM 975- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 04:40:48 AM 39- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:40:48 AM 94- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 04:40:48 AM 259- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:40:48 AM 338- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 04:40:48 AM 405- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:40:48 AM 457- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 04:40:48 AM 513- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:40:48 AM 567- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 04:40:48 AM 621- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:40:48 AM 674- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 04:40:48 AM 737- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:40:48 AM 789- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 04:40:48 AM 845- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:40:48 AM 899- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 04:40:48 AM 971- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:40:49 AM 25- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 04:40:49 AM 81- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:40:49 AM 97- 17872- INFO - Data [{'google': '503'}, {'credit suisse': 200}, {'google1': 404}, {'credit1 suisse': 200}, {'google2': 200}, {'credit2 suisse': 200}, {'google3': 200}, {'credit3 suisse': 200}, {'google4': 200}, {'credit5 suisse': 200}, {'google6': 200}, {'credit6 suisse': 200}, {'google8': 200}, {'credit9 suisse': 200}, {'google10': 200}, {'credit11 suisse': 200}, {'google12': 200}, {'credit13 suisse': 200}, {'google14': 200}, {'credit15 suisse': 200}, {'google17': 200}, {'credit18 suisse': 200}, {'google19': 200}, {'credit20 suisse': 200}, {'google21': 200}, {'credit22 suisse': 200}, {'google23': 200}, {'credit24 suisse': 200}, {'google25': 200}, {'credit26 suisse': 200}]
+12-Jul-20 04:40:49 AM 97- 17872- INFO - The summary data: ['Summary of service status around: 12/07/2020 04:07', '--------------------------------------------------', '--------------------------------------------------', 'Total number service(URL) are UP and Running: 28', 'Total Number of service(URL) is Down: 2', "List of name URL was down: ['google:503', 'google1:404']", '--------------------------------------------------', '--------------------------------------------------']
+12-Jul-20 04:50:49 AM 100- 17872- DEBUG - Starting new HTTPS connection (5): www.google.com1:443
+12-Jul-20 04:50:49 AM 107- 17872- DEBUG - Incremented Retry for (url='/'): Retry(total=2, connect=None, read=None, redirect=None, status=None)
+12-Jul-20 04:50:49 AM 107- 17872- WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x000001683396BD08>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+12-Jul-20 04:50:49 AM 108- 17872- DEBUG - Starting new HTTPS connection (6): www.google.com1:443
+12-Jul-20 04:50:49 AM 110- 17872- DEBUG - Incremented Retry for (url='/'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+12-Jul-20 04:50:49 AM 110- 17872- WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x00000168339ABCC8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+12-Jul-20 04:50:49 AM 111- 17872- DEBUG - Starting new HTTPS connection (7): www.google.com1:443
+12-Jul-20 04:50:49 AM 112- 17872- DEBUG - Incremented Retry for (url='/'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+12-Jul-20 04:50:49 AM 112- 17872- WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x00000168339ABC08>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+12-Jul-20 04:50:49 AM 113- 17872- DEBUG - Starting new HTTPS connection (8): www.google.com1:443
+12-Jul-20 04:50:49 AM 114- 17872- DEBUG - Resetting dropped connection: www.credit-suisse.com
+12-Jul-20 04:50:49 AM 296- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:50:49 AM 396- 17872- DEBUG - Resetting dropped connection: www.google.com
+12-Jul-20 04:50:49 AM 433- 17872- DEBUG - https://www.google.com:443 "GET /api HTTP/1.1" 404 1564
+12-Jul-20 04:50:49 AM 483- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:50:49 AM 566- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 04:50:49 AM 619- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:50:49 AM 697- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 04:50:49 AM 750- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:50:49 AM 803- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 04:50:49 AM 853- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:50:49 AM 900- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 04:50:49 AM 953- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:50:50 AM 3- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 04:50:50 AM 52- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:50:50 AM 103- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 04:50:50 AM 277- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:50:50 AM 400- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 04:50:50 AM 502- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:50:50 AM 557- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 04:50:50 AM 609- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:50:50 AM 657- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 04:50:50 AM 711- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:50:50 AM 765- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 04:50:50 AM 819- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:50:50 AM 880- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 04:50:50 AM 939- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:50:50 AM 999- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 04:50:51 AM 54- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:50:51 AM 106- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 04:50:51 AM 155- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 04:50:51 AM 170- 17872- INFO - Data [{'google': '503'}, {'credit suisse': 200}, {'google1': 404}, {'credit1 suisse': 200}, {'google2': 200}, {'credit2 suisse': 200}, {'google3': 200}, {'credit3 suisse': 200}, {'google4': 200}, {'credit5 suisse': 200}, {'google6': 200}, {'credit6 suisse': 200}, {'google8': 200}, {'credit9 suisse': 200}, {'google10': 200}, {'credit11 suisse': 200}, {'google12': 200}, {'credit13 suisse': 200}, {'google14': 200}, {'credit15 suisse': 200}, {'google17': 200}, {'credit18 suisse': 200}, {'google19': 200}, {'credit20 suisse': 200}, {'google21': 200}, {'credit22 suisse': 200}, {'google23': 200}, {'credit24 suisse': 200}, {'google25': 200}, {'credit26 suisse': 200}]
+12-Jul-20 04:50:51 AM 171- 17872- INFO - The summary data: ['Summary of service status around: 12/07/2020 04:07', '--------------------------------------------------', '--------------------------------------------------', 'Total number service(URL) are UP and Running: 28', 'Total Number of service(URL) is Down: 2', "List of name URL was down: ['google:503', 'google1:404']", '--------------------------------------------------', '--------------------------------------------------']
+12-Jul-20 05:00:51 AM 173- 17872- DEBUG - Starting new HTTPS connection (9): www.google.com1:443
+12-Jul-20 05:00:51 AM 204- 17872- DEBUG - Incremented Retry for (url='/'): Retry(total=2, connect=None, read=None, redirect=None, status=None)
+12-Jul-20 05:00:51 AM 205- 17872- WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x000001683396B488>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+12-Jul-20 05:00:51 AM 205- 17872- DEBUG - Starting new HTTPS connection (10): www.google.com1:443
+12-Jul-20 05:00:51 AM 206- 17872- DEBUG - Incremented Retry for (url='/'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+12-Jul-20 05:00:51 AM 207- 17872- WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x00000168339C0188>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+12-Jul-20 05:00:51 AM 207- 17872- DEBUG - Starting new HTTPS connection (11): www.google.com1:443
+12-Jul-20 05:00:51 AM 208- 17872- DEBUG - Incremented Retry for (url='/'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+12-Jul-20 05:00:51 AM 209- 17872- WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x00000168339C0588>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+12-Jul-20 05:00:51 AM 209- 17872- DEBUG - Starting new HTTPS connection (12): www.google.com1:443
+12-Jul-20 05:00:51 AM 211- 17872- DEBUG - Resetting dropped connection: www.credit-suisse.com
+12-Jul-20 05:00:51 AM 400- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:00:51 AM 531- 17872- DEBUG - Resetting dropped connection: www.google.com
+12-Jul-20 05:00:51 AM 574- 17872- DEBUG - https://www.google.com:443 "GET /api HTTP/1.1" 404 1564
+12-Jul-20 05:00:51 AM 653- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:00:51 AM 752- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:00:51 AM 822- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:00:51 AM 921- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:00:51 AM 996- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:00:52 AM 47- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:00:52 AM 131- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:00:52 AM 232- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:00:52 AM 483- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:00:52 AM 552- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:00:52 AM 613- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:00:52 AM 670- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:00:52 AM 732- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:00:52 AM 794- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:00:52 AM 855- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:00:52 AM 906- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:00:52 AM 976- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:00:53 AM 34- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:00:53 AM 103- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:00:53 AM 164- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:00:53 AM 226- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:00:53 AM 283- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:00:53 AM 347- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:00:53 AM 401- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:00:53 AM 469- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:00:53 AM 523- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:00:53 AM 587- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:00:53 AM 603- 17872- INFO - Data [{'google': '503'}, {'credit suisse': 200}, {'google1': 404}, {'credit1 suisse': 200}, {'google2': 200}, {'credit2 suisse': 200}, {'google3': 200}, {'credit3 suisse': 200}, {'google4': 200}, {'credit5 suisse': 200}, {'google6': 200}, {'credit6 suisse': 200}, {'google8': 200}, {'credit9 suisse': 200}, {'google10': 200}, {'credit11 suisse': 200}, {'google12': 200}, {'credit13 suisse': 200}, {'google14': 200}, {'credit15 suisse': 200}, {'google17': 200}, {'credit18 suisse': 200}, {'google19': 200}, {'credit20 suisse': 200}, {'google21': 200}, {'credit22 suisse': 200}, {'google23': 200}, {'credit24 suisse': 200}, {'google25': 200}, {'credit26 suisse': 200}]
+12-Jul-20 05:00:53 AM 604- 17872- INFO - The summary data: ['Summary of service status around: 12/07/2020 04:07', '--------------------------------------------------', '--------------------------------------------------', 'Total number service(URL) are UP and Running: 28', 'Total Number of service(URL) is Down: 2', "List of name URL was down: ['google:503', 'google1:404']", '--------------------------------------------------', '--------------------------------------------------']
+12-Jul-20 05:10:53 AM 606- 17872- DEBUG - Starting new HTTPS connection (13): www.google.com1:443
+12-Jul-20 05:10:53 AM 618- 17872- DEBUG - Incremented Retry for (url='/'): Retry(total=2, connect=None, read=None, redirect=None, status=None)
+12-Jul-20 05:10:53 AM 618- 17872- WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x00000168339BACC8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+12-Jul-20 05:10:53 AM 619- 17872- DEBUG - Starting new HTTPS connection (14): www.google.com1:443
+12-Jul-20 05:10:53 AM 620- 17872- DEBUG - Incremented Retry for (url='/'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+12-Jul-20 05:10:53 AM 620- 17872- WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x00000168339C87C8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+12-Jul-20 05:10:53 AM 621- 17872- DEBUG - Starting new HTTPS connection (15): www.google.com1:443
+12-Jul-20 05:10:53 AM 622- 17872- DEBUG - Incremented Retry for (url='/'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+12-Jul-20 05:10:53 AM 622- 17872- WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x00000168339C8BC8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+12-Jul-20 05:10:53 AM 623- 17872- DEBUG - Starting new HTTPS connection (16): www.google.com1:443
+12-Jul-20 05:10:53 AM 624- 17872- DEBUG - Resetting dropped connection: www.credit-suisse.com
+12-Jul-20 05:10:53 AM 823- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:10:53 AM 929- 17872- DEBUG - Resetting dropped connection: www.google.com
+12-Jul-20 05:10:53 AM 964- 17872- DEBUG - https://www.google.com:443 "GET /api HTTP/1.1" 404 1564
+12-Jul-20 05:10:54 AM 17- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:10:54 AM 220- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:10:54 AM 270- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:10:54 AM 353- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:10:54 AM 403- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:10:54 AM 453- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:10:54 AM 504- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:10:54 AM 559- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:10:54 AM 608- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:10:54 AM 665- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:10:54 AM 716- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:10:54 AM 766- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:10:54 AM 815- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:10:54 AM 866- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:10:54 AM 919- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:10:54 AM 974- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:10:55 AM 25- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:10:55 AM 79- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:10:55 AM 212- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:10:55 AM 256- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:10:55 AM 307- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:10:55 AM 365- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:10:55 AM 415- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:10:55 AM 467- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:10:55 AM 518- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:10:55 AM 569- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:10:55 AM 620- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:10:55 AM 634- 17872- INFO - Data [{'google': '503'}, {'credit suisse': 200}, {'google1': 404}, {'credit1 suisse': 200}, {'google2': 200}, {'credit2 suisse': 200}, {'google3': 200}, {'credit3 suisse': 200}, {'google4': 200}, {'credit5 suisse': 200}, {'google6': 200}, {'credit6 suisse': 200}, {'google8': 200}, {'credit9 suisse': 200}, {'google10': 200}, {'credit11 suisse': 200}, {'google12': 200}, {'credit13 suisse': 200}, {'google14': 200}, {'credit15 suisse': 200}, {'google17': 200}, {'credit18 suisse': 200}, {'google19': 200}, {'credit20 suisse': 200}, {'google21': 200}, {'credit22 suisse': 200}, {'google23': 200}, {'credit24 suisse': 200}, {'google25': 200}, {'credit26 suisse': 200}]
+12-Jul-20 05:10:55 AM 635- 17872- INFO - The summary data: ['Summary of service status around: 12/07/2020 04:07', '--------------------------------------------------', '--------------------------------------------------', 'Total number service(URL) are UP and Running: 28', 'Total Number of service(URL) is Down: 2', "List of name URL was down: ['google:503', 'google1:404']", '--------------------------------------------------', '--------------------------------------------------']
+12-Jul-20 05:20:55 AM 636- 17872- DEBUG - Starting new HTTPS connection (17): www.google.com1:443
+12-Jul-20 05:20:55 AM 640- 17872- DEBUG - Incremented Retry for (url='/'): Retry(total=2, connect=None, read=None, redirect=None, status=None)
+12-Jul-20 05:20:55 AM 640- 17872- WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x00000168339C8308>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+12-Jul-20 05:20:55 AM 640- 17872- DEBUG - Starting new HTTPS connection (18): www.google.com1:443
+12-Jul-20 05:20:55 AM 641- 17872- DEBUG - Incremented Retry for (url='/'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+12-Jul-20 05:20:55 AM 641- 17872- WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x00000168339C88C8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+12-Jul-20 05:20:55 AM 641- 17872- DEBUG - Starting new HTTPS connection (19): www.google.com1:443
+12-Jul-20 05:20:55 AM 642- 17872- DEBUG - Incremented Retry for (url='/'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+12-Jul-20 05:20:55 AM 642- 17872- WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x00000168339C8508>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+12-Jul-20 05:20:55 AM 642- 17872- DEBUG - Starting new HTTPS connection (20): www.google.com1:443
+12-Jul-20 05:20:55 AM 643- 17872- DEBUG - Resetting dropped connection: www.credit-suisse.com
+12-Jul-20 05:20:55 AM 793- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:20:55 AM 889- 17872- DEBUG - Resetting dropped connection: www.google.com
+12-Jul-20 05:20:55 AM 925- 17872- DEBUG - https://www.google.com:443 "GET /api HTTP/1.1" 404 1564
+12-Jul-20 05:20:55 AM 972- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:20:56 AM 52- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:20:56 AM 101- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:20:56 AM 177- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:20:56 AM 231- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:20:56 AM 282- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:20:56 AM 336- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:20:56 AM 388- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:20:56 AM 442- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:20:56 AM 497- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:20:56 AM 546- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:20:56 AM 600- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:20:56 AM 656- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:20:56 AM 709- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:20:56 AM 759- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:20:56 AM 806- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:20:56 AM 864- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:20:56 AM 921- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:20:56 AM 973- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:20:57 AM 27- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:20:57 AM 76- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:20:57 AM 128- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:20:57 AM 183- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:20:57 AM 237- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:20:57 AM 287- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:20:57 AM 347- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:20:57 AM 397- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:20:57 AM 411- 17872- INFO - Data [{'google': '503'}, {'credit suisse': 200}, {'google1': 404}, {'credit1 suisse': 200}, {'google2': 200}, {'credit2 suisse': 200}, {'google3': 200}, {'credit3 suisse': 200}, {'google4': 200}, {'credit5 suisse': 200}, {'google6': 200}, {'credit6 suisse': 200}, {'google8': 200}, {'credit9 suisse': 200}, {'google10': 200}, {'credit11 suisse': 200}, {'google12': 200}, {'credit13 suisse': 200}, {'google14': 200}, {'credit15 suisse': 200}, {'google17': 200}, {'credit18 suisse': 200}, {'google19': 200}, {'credit20 suisse': 200}, {'google21': 200}, {'credit22 suisse': 200}, {'google23': 200}, {'credit24 suisse': 200}, {'google25': 200}, {'credit26 suisse': 200}]
+12-Jul-20 05:20:57 AM 411- 17872- INFO - The summary data: ['Summary of service status around: 12/07/2020 04:07', '--------------------------------------------------', '--------------------------------------------------', 'Total number service(URL) are UP and Running: 28', 'Total Number of service(URL) is Down: 2', "List of name URL was down: ['google:503', 'google1:404']", '--------------------------------------------------', '--------------------------------------------------']
+12-Jul-20 05:30:46 AM 848- 17872- INFO - The monitoring data: [['Summary of service status around: 12/07/2020 04:07', '--------------------------------------------------', '--------------------------------------------------', 'Total number service(URL) are UP and Running: 28', 'Total Number of service(URL) is Down: 2', "List of name URL was down: ['google:503', 'google1:404']", '--------------------------------------------------', '--------------------------------------------------'], ['Summary of service status around: 12/07/2020 04:07', '--------------------------------------------------', '--------------------------------------------------', 'Total number service(URL) are UP and Running: 28', 'Total Number of service(URL) is Down: 2', "List of name URL was down: ['google:503', 'google1:404']", '--------------------------------------------------', '--------------------------------------------------'], ['Summary of service status around: 12/07/2020 04:07', '--------------------------------------------------', '--------------------------------------------------', 'Total number service(URL) are UP and Running: 28', 'Total Number of service(URL) is Down: 2', "List of name URL was down: ['google:503', 'google1:404']", '--------------------------------------------------', '--------------------------------------------------'], ['Summary of service status around: 12/07/2020 04:07', '--------------------------------------------------', '--------------------------------------------------', 'Total number service(URL) are UP and Running: 28', 'Total Number of service(URL) is Down: 2', "List of name URL was down: ['google:503', 'google1:404']", '--------------------------------------------------', '--------------------------------------------------'], ['Summary of service status around: 12/07/2020 04:07', '--------------------------------------------------', '--------------------------------------------------', 'Total number service(URL) are UP and Running: 28', 'Total Number of service(URL) is Down: 2', "List of name URL was down: ['google:503', 'google1:404']", '--------------------------------------------------', '--------------------------------------------------']]
+12-Jul-20 05:30:57 AM 416- 17872- DEBUG - Starting new HTTPS connection (21): www.google.com1:443
+12-Jul-20 05:30:57 AM 433- 17872- DEBUG - Incremented Retry for (url='/'): Retry(total=2, connect=None, read=None, redirect=None, status=None)
+12-Jul-20 05:30:57 AM 433- 17872- WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x00000168339BA948>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+12-Jul-20 05:30:57 AM 434- 17872- DEBUG - Starting new HTTPS connection (22): www.google.com1:443
+12-Jul-20 05:30:57 AM 434- 17872- DEBUG - Incremented Retry for (url='/'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+12-Jul-20 05:30:57 AM 435- 17872- WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x00000168339BA348>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+12-Jul-20 05:30:57 AM 435- 17872- DEBUG - Starting new HTTPS connection (23): www.google.com1:443
+12-Jul-20 05:30:57 AM 436- 17872- DEBUG - Incremented Retry for (url='/'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+12-Jul-20 05:30:57 AM 436- 17872- WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x00000168339BA148>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+12-Jul-20 05:30:57 AM 436- 17872- DEBUG - Starting new HTTPS connection (24): www.google.com1:443
+12-Jul-20 05:30:57 AM 438- 17872- DEBUG - Resetting dropped connection: www.credit-suisse.com
+12-Jul-20 05:30:57 AM 602- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:30:57 AM 700- 17872- DEBUG - Resetting dropped connection: www.google.com
+12-Jul-20 05:30:57 AM 732- 17872- DEBUG - https://www.google.com:443 "GET /api HTTP/1.1" 404 1564
+12-Jul-20 05:30:57 AM 781- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:30:57 AM 871- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:30:57 AM 927- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:30:58 AM 6- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:30:58 AM 57- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:30:58 AM 120- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:30:58 AM 168- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:30:58 AM 227- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:30:58 AM 279- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:30:58 AM 329- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:30:58 AM 381- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:30:58 AM 435- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:30:58 AM 487- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:30:58 AM 547- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:30:58 AM 597- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:30:58 AM 650- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:30:58 AM 702- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:30:58 AM 754- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:30:58 AM 804- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:30:58 AM 854- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:30:58 AM 922- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:30:58 AM 977- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:30:59 AM 34- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:30:59 AM 82- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:30:59 AM 131- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:30:59 AM 184- 17872- DEBUG - https://www.google.com:443 "GET / HTTP/1.1" 200 None
+12-Jul-20 05:30:59 AM 237- 17872- DEBUG - https://www.credit-suisse.com:443 "GET /sg/en.html HTTP/1.1" 200 None
+12-Jul-20 05:30:59 AM 251- 17872- INFO - Data [{'google': '503'}, {'credit suisse': 200}, {'google1': 404}, {'credit1 suisse': 200}, {'google2': 200}, {'credit2 suisse': 200}, {'google3': 200}, {'credit3 suisse': 200}, {'google4': 200}, {'credit5 suisse': 200}, {'google6': 200}, {'credit6 suisse': 200}, {'google8': 200}, {'credit9 suisse': 200}, {'google10': 200}, {'credit11 suisse': 200}, {'google12': 200}, {'credit13 suisse': 200}, {'google14': 200}, {'credit15 suisse': 200}, {'google17': 200}, {'credit18 suisse': 200}, {'google19': 200}, {'credit20 suisse': 200}, {'google21': 200}, {'credit22 suisse': 200}, {'google23': 200}, {'credit24 suisse': 200}, {'google25': 200}, {'credit26 suisse': 200}]
+12-Jul-20 05:30:59 AM 251- 17872- INFO - The summary data: ['Summary of service status around: 12/07/2020 04:07', '--------------------------------------------------', '--------------------------------------------------', 'Total number service(URL) are UP and Running: 28', 'Total Number of service(URL) is Down: 2', "List of name URL was down: ['google:503', 'google1:404']", '--------------------------------------------------', '--------------------------------------------------']

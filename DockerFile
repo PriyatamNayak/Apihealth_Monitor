@@ -1,0 +1,9 @@
+FROM  registry.access.redhat.com/rhel7/rhel          # you can use internal rhel repo also or any os
+RUN mkdir -p /home/code_repo/Apihealth_Monitor
+WORKDIR /home/code_repo/Apihealth_Monitor
+ADD . .
+RUN python3 -m pip install -r requirements.txt
+EXPOSE 8484
+CMD ["/bin/bash", "run.sh"]
+
+# you can run client (service_monitor_client.py) outside anywhere to view the summary , if you want you can run also in docker

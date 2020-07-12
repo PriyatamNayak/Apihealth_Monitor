@@ -15,11 +15,13 @@ import urllib3
 parser = argparse.ArgumentParser()
 parser.add_argument('-p', '--port', default=8484)
 parser.add_argument('-f', '--file_path', default="url_list.csv")
+parser.add_argument('-o', '--output_file_path', default="output/output.txt")
 args = parser.parse_args()
 
 # Declaring Global Variables
 port = int(args.port)
 input_file = args.file_path
+output_file = args.output_file_path
 http = urllib3.PoolManager()
 monitor_data = []
 now = datetime.now()
@@ -29,7 +31,9 @@ no_of_services_down_counter = 0
 name_of_services_down_list = []
 
 log_filename = "logs/service_monitor_output.log"
+output = "output/output.txt"
 os.makedirs(os.path.dirname(log_filename), exist_ok=True)
+os.makedirs(os.path.dirname(output), exist_ok=True)
 logging.basicConfig(filename=log_filename, filemode='a',
                     format='%(asctime)s %(msecs)d- %(process)d- %(levelname)s - %(message)s',
                     datefmt='%d-%b-%y %H:%M:%S %p',
@@ -154,6 +158,9 @@ def run():
             sc.enter(600, 1, url_status_check)
 
         def send_monitor_data():
+            """
+            :return:
+            """
             global monitor_data
             # Make sure we are taking last 1 hour data , so we are taking last 6 data from data list
             temp = monitor_data[-6:]
@@ -161,12 +168,16 @@ def run():
             monitor_data = []
             msg = pickle.dumps(temp)
             client_socket.send(msg)
-            logging.info(f'The monitoring data: {send_monitor_data}')
-            # running after 65 minutes
-            sc.enter(3900, 1, send_monitor_data)
+            logging.info(f'The monitoring data: {temp}')
+            # Saving the results
+            with open(output_file, 'w') as f:
+                for item in temp:
+                    f.write("%s\n" % item)
+            # running every 60 minutes
+            sc.enter(3600, 2, send_monitor_data)
 
         sc.enter(600, 1, url_status_check)
-        sc.enter(3900, 1, send_monitor_data)
+        sc.enter(3600, 2, send_monitor_data)
 
         sc.run()
 

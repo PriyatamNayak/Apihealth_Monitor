@@ -18,14 +18,16 @@ logging.basicConfig(filename=log_filename, filemode='a',
 # Connecting same port as where our service binds
 parser = argparse.ArgumentParser()
 parser.add_argument('-p', '--port', default=8484)
+parser.add_argument('-host', '--hostname', default='localhost')
+
 args = parser.parse_args()
 
 # Declaring Global Variables
 port = int(args.port)
-
+host_name = args.hostname
 
 pp = pprint.PrettyPrinter(indent=8)
-server_address = ('localhost', port)
+server_address = (host_name, port)
 print(sys.stderr, 'connecting to %s port %s' % server_address)
 sock_obj = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sock_obj.connect(server_address)
